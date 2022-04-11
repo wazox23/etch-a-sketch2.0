@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #34eb9e;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Rubik Puddles', cursive;
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    font-size: 80px;
+    letter-spacing: 1.5px;
+   
+}
+
+
+#board{
+    width: 500px;
+    height: 500px;
+    display: grid; 
+    border:2px solid #34eb9e;
+    border-radius: 20px;
+    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    padding: 2.5px 5px;
+    border: none;
+    background: #34eb9e;
+    border: 4px solid white;
+    border-radius: 20px;
+    font-weight: 900;
+    color: white;  
+}
+
+#inputColor {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px 0;
+}
+
+.input-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px dashed white;
+    margin-right: 30px;
+    padding: 10px 20px;
+    
+    
+
+}
+
+#input-size {
+    width: 40px;
+    margin: 10px 0;
+    
+}
+
+
+
+#resetBtn {
+    margin: 10px 0;
+}
+
+#sizeValue {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.slider {
+  background: #fff;
+  color: white;
+  border: 2px solid red;
+}

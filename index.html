@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch-A-Sketch</h1>
+    </header>
+    <main>
+       
+        <div class="input-buttons">
+            <div id="sizeValue">16 x 16</div>
+            <input type="range" value="16" min="1" max="64" id="sizeSlider"  onchange="populateBoard(this.value)" />
+            <input type="color" id ="inputColor">
+            <button id ="setColor">Set color</button>
+            <button id ="resetBtn">Reset</button>
+        </div>
+        
+        <div id="board"></div>
+       
+    </main>
+<script src="app.js"></script>
+</body>
+</html>
